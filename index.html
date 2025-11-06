@@ -29,7 +29,7 @@
   }
     .forbody{
         color: #563517;
-        background color:#fffbf2;
+background-color: #fffbf2;
 
 
     }
@@ -40,12 +40,24 @@ background-image:url('');
   background-repeat: no-repeat; /* prevents tiling */
   background-position: left;
 }
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center !important;
+  }
+  .navbar-brand {
+    font-size: 38px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 </style>
 </head>
 <body class="forbody">
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand text-light fw-bold" href="#" >Bean  Coffee</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +115,7 @@ background-image:url('');
 
     <div class="container mt-5 w-75 ms-10 ">
   <div class="row d-flex justify-content-center align-items-center mx-auto">
-    <div class="col-5 d-flex justify-content-center align-items-center p-2 ">
+    <div class="col-12 col-md-5 d-flex justify-content-center align-items-center p-2 ">
 <div class="card ms-5 border border-light" style="width: 18rem;">
   <div class="card-body ms-1">
     <h5 class="card-title">Our Story</h5>
@@ -114,11 +126,11 @@ background-image:url('');
 </div>
     </div>
 
-        <div class="col-2  d-flex justify-content-center align-items-center p-2">
+        <div class="col-12 col-md-2  d-flex justify-content-center align-items-center p-2">
          <img src="coffee3.png" style="height:300px; width:200%">
     </div>
 
-      <div class="col-5">
+      <div class="col-12 col-md-2">
       <div class="card ms-5  border border-light" style="width: 18rem;">
   <div class="card-body ms-3">
     <h5 class="card-title">Our Vision</h5>
@@ -142,7 +154,7 @@ background-image:url('');
 
     <div class="container mt-5 w-75 ms-10 ">
   <div class="row d-flex justify-content-center align-items-center mx-auto mt-5">
-          <div class="col-6  ">
+<div class="col-12 col-md-6 col-lg-4">
 
               <div class="card mb-3 border border-light" style="max-width: 6000px;">
   <div class="row g-0 ">
@@ -161,7 +173,7 @@ background-image:url('');
 
 
 
-      <div class="col-6  ">
+<div class="col-12 col-md-6 col-lg-4">
           <div class="card mb-3 border border-light" style="max-width: 6000px;">
   <div class="row g-0 ">
     <div class="col-md-5">
@@ -180,7 +192,8 @@ background-image:url('');
   </div>
 
         <div class="row  d-flex justify-content-center align-items-center mx-auto">
-          <div class="col-6  ">              <div class="card mb-3 border border-light" style="max-width: 6000px;">
+<div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3 border border-light" style="max-width: 6000px;">
   <div class="row g-0 ">
     <div class="col-md-5">
       <img src="sandwich.jfif" class="img-fluid rounded-start" alt="..." style="height:150px; width:300px;">
@@ -195,7 +208,7 @@ background-image:url('');
 </div>
 
           </div>
-      <div class="col-6  ">
+<div class="col-12 col-md-6 col-lg-4">
           <div class="card mb-3 border border-light" style="max-width: 6000px;">
   <div class="row g-0 ">
     <div class="col-md-5">
@@ -240,7 +253,7 @@ background-image:url('');
         </div>
             <div class="mt-5 mb-5">
                 <div class="row p-4 d-flex justify-content-center align-items-center mx-auto ">
-                    <div class="col-4 "><div class="card" style="width: 15rem;">
+                    <div class="col-12 col-md-6 col-lg-4"><div class="card" style="width: 15rem;">
   <img src="menu1%20cup.jpg" style="height:200px;" class="card-img-top" alt="">
   <div class="card-body">
     <h3 class="card-title">Cappuccino</h3>
@@ -248,7 +261,8 @@ background-image:url('');
     <p class="card-text">Some quick example text to buie card's content.</p>
   </div>
 </div></div>
-                    <div class="col-4 px-3"><div class="card " style="width: 15rem;">
+                    <div class="col-12 col-md-6 col-lg-4 px-3">
+<div class="card " style="width: 15rem;">
   <img src="pasta.jfif" style="height:200px;" class="card-img-top" alt="">
   <div class="card-body">
     <h3 class="card-title">Alfredo Pasta</h3>
@@ -256,7 +270,8 @@ background-image:url('');
     <p class="card-text">Some quick example text to buie card's content.</p>
   </div>
 </div></div>
-                                        <div class="col-4"><div class="card " style="width: 15rem;">
+<div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card " style="width: 15rem;">
   <img src="sandwich.jfif" style="height:200px;" class="card-img-top" alt="">
   <div class="card-body">
     <h3 class="card-title">Sandwich</h3>
@@ -269,14 +284,16 @@ background-image:url('');
 
 
                 <div class="row p-4 d-flex justify-content-center align-items-center mx-auto mt-4 ">
-                    <div class="col-4 "><div class="card" style="width: 15rem;"><img src="chicken%20hack.jfif" style="height:200px;" class="card-img-top" alt="">
+                    <div class="col-12 col-md-6 col-lg-4">
+<div class="card" style="width: 15rem;"><img src="chicken%20hack.jfif" style="height:200px;" class="card-img-top" alt="">
   <div class="card-body">
     <h3 class="card-title">Tortilla Hack</h3>
           <h5 class="card-title">$14</h5>
     <p class="card-text">Some quick example text to buie card's content.</p>
   </div>
 </div></div>
-                    <div class="col-4 "><div class="card" style="width: 15rem;"><img src="burger.jfif" style="height:200px;" class="card-img-top" alt="">
+                   <div class="col-12 col-md-6 col-lg-4">
+<div class="card" style="width: 15rem;"><img src="burger.jfif" style="height:200px;" class="card-img-top" alt="">
   <div class="card-body">
     <h3 class="card-title">Burger</h3>
           <h5 class="card-title">$14</h5>
@@ -310,7 +327,7 @@ background-image:url('');
         </div>
             <div class="mt-5 ms-5 ">
                 <div class="ms-5 row ">
-                    <div class="col-8"><form>
+                    <div class="col-12 col-md-8"><form>
   <div class="mb-3">
     <label  class="form-label">Name</label>
     <input type="text" class="form-control">
@@ -337,8 +354,12 @@ background-image:url('');
   <button type="submit" class="btn  mb-4" style="background-color: #d38d3c;
     border-color: #d18731;">BOOK NOW</button>
 </form></div>
-                            <div class="col-4 mb-4  d-flex justify-content-center align-items-center p-2">
-<img src="coffeemua.jfif" class="rounded-circle" width="400px" height="350px">
+<!--                            <div class="col-4 mb-4  d-flex justify-content-center align-items-center p-2">-->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0 text-center">
+
+<!--<img src="coffeemua.jfif" class="rounded-circle" width="400px" height="350px">-->
+                        <img src="coffeemua.jfif" class="rounded-circle img-fluid" width="400" height="350">
+
 </div>
                 </div>
             </div>
@@ -348,13 +369,16 @@ background-image:url('');
     <!-- Footer Start -->
     <div class="container-fluid footer  text-white mt-5 " id="contact" style="background-image:url('footer2.jpg');">
         <div class="row mx-0  mt-5 mb-3">
-            <div class="col-3  mt-5 mb-3">
+<!--            <div class="col-3  mt-5 mb-3">-->
+            <div class="col-12 col-md-3 mt-4 text-center text-md-start">
                 <h4 class="text-white text-uppercase" style="letter-spacing: 3px;">Get In Touch</h4>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
                 <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
             </div>
-            <div class="col-3 mt-5 mb-3">
+<!--            <div class="col-3 mt-5 mb-3">-->
+                        <div class="col-12 col-md-3 mt-4 text-center text-md-start">
+
                 <h4 class="text-white text-uppercase" style="letter-spacing: 3px;">Follow Us</h4>
                 <p>Amet elitr vero magna m rebum</p>
                 <div class="d-flex justify-content-start">
@@ -364,7 +388,9 @@ background-image:url('');
                     <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-3 mt-5 mb-5">
+<!--            <div class="col-3 mt-5 mb-5">-->
+                        <div class="col-12 col-md-3 mt-4 text-center text-md-start">
+
                 <h4 class="text-white text-uppercase" style="letter-spacing: 3px;">Open Hours</h4>
                 <div>
                     <h6 class="text-white text-uppercase">Monday - Friday</h6>
@@ -373,7 +399,9 @@ background-image:url('');
                     <p>2.00 PM - 8.00 PM</p>
                 </div>
             </div>
-            <div class="col-3 mt-5 mb-3">
+<!--            <div class="col-3 mt-5 mb-3">-->
+                        <div class="col-12 col-md-3 mt-4 text-center text-md-start">
+
                 <h4 class="text-white text-uppercase" style="letter-spacing: 3px;">Newsletter</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                 <div class="w-100">
